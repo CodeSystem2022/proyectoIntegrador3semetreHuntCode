@@ -1,0 +1,15 @@
+02:21:51 AM:ERROR [Bd_conexion.py:91] Ocurrio un error, se hizo un rollback: 1146 (42S02): Table 'centro_salud.personas' doesn't exist
+10:31:04 AM:DEBUG [Archivo_CRUD.py:22] Conexión cerrada
+10:38:31 AM:DEBUG [Archivo_CRUD.py:15] Registro creado exitosamente.
+10:38:31 AM:DEBUG [Archivo_CRUD.py:23] Conexión cerrada
+03:58:31 PM:DEBUG [Archivo_CRUD.py:23] Conexión cerrada
+04:01:49 PM:DEBUG [Archivo_CRUD.py:15] Registro creado exitosamente.
+04:01:49 PM:DEBUG [Archivo_CRUD.py:23] Conexión cerrada
+04:47:32 PM:DEBUG [Archivo_CRUD.py:15] Registro creado exitosamente.
+04:47:32 PM:DEBUG [Archivo_CRUD.py:23] Conexión cerrada
+04:53:14 PM:DEBUG [Archivo_CRUD.py:15] Registro creado exitosamente.
+04:53:14 PM:DEBUG [Archivo_CRUD.py:23] Conexión cerrada
+01:54:52 AM:DEBUG [Archivo_CRUD.py:15] Registro creado exitosamente.
+01:54:52 AM:DEBUG [Archivo_CRUD.py:23] Conexión cerrada
+12:42:13 AM:DEBUG [Archivo_CRUD.py:15] Registro creado exitosamente.
+12:42:14 AM:DEBUG [Archivo_CRUD.py:23] Conexión cerrada
