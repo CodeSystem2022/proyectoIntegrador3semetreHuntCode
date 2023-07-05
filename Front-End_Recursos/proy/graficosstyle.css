@@ -1,0 +1,20 @@
+tml, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://static.wixstatic.com/media/447b65_7dcf89c372854e48ba888529a4299059~mv2.jpg/v1/fill/w_640,h_340,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/447b65_7dcf89c372854e48ba888529a4299059~mv2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0;
+    color: aliceblue;
+  }
+  h2 {
+    color: #f1c40f;
+    font-size: 4rem;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  body{
+    text-align: center;
+  }
