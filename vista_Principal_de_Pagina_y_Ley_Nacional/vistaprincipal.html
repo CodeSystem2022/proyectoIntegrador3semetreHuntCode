@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MENU</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        
+        <link rel="stylesheet" href="vistaprincipal.css">
+    </head>
+    <body> 
+
+        <h1 class="titulo">MENÚ</h1>
+        <form id="searchForm" class="search-form"></form>
+            <div class="buscar">
+                <input type="text" id="searchInput" placeholder="searchInput" required />
+                <div class="btn">
+                  <i class="fas fa-search icon"></i>
+                </div>
+            </form>
+            <form id="searchForm">
+                <div class="button-group">
+                    <button type="button" class="bn1" id="leyesBtn">LEYES</button>
+                    <button type="button" class="bn2" id="decretosBtn">DECRETOS</button>
+                    <button type="button" class="bn3" id="resolucionesBtn">RESOLUCIONES</button>
+                    <button type="button" class="bn4" id="recursosBtn">RECURSOS</button>
+                    <button type="button" class="bn5" id="misfavoritosBtn"><i class="fas fa-heart"></i>MIS FAVORITOS</button>
+                    <button type="button" class="bn6" id="masvisitadosBtn"><i class="fas fa-star"></i>MAS VISITADOS</button>
+                </div>
+            </form>
+              
+
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="leyes.js"></script>
+            <script>
+              $(document).ready(function() {
+                // Agregar controladores de evento para los botones de búsqueda
+                $(".button-group button").click(function() {
+                  $(".button-group button").removeClass("active");
+                  $(this).addClass("active");
+                });
+            
+                // Agregar controlador de evento para el ícono de búsqueda
+                $(".icon").click(function() {
+                  submitSearchForm();
+                });
+            
+                // Agregar controlador de evento para presionar la tecla Enter en el campo de búsqueda
+                $("#searchInput").keypress(function(event) {
+                  if (event.which === 13) {
+                    submitSearchForm();
+                  }
+                });
+            
+                function submitSearchForm() {
+                  var searchTerm = $("#searchInput").val();
+                  var selectedCategory = $(".button-group button.active").data("category");
+            
+                  switch (selectedCategory) {
+                    case "leyes":
+                      buscarEnLeyes(searchTerm);
+                      break;
+                    case "decretos":
+                      buscarEnDecretos(searchTerm);
+                      break;
+                    case "resoluciones":
+                      buscarEnResoluciones(searchTerm);
+                      break;
+                    case "recursos":
+                      buscarEnRecursos(searchTerm);
+                      break;
+                    case "misfavoritos":
+                      buscarEnMisFavoritos(searchTerm);
+                      break;
+                    case "masvisitados":
+                      buscarEnMasVisitados(searchTerm);
+                      break;
+                    default:
+                      buscar(searchTerm);
+                  }
+                }
+            
+                // Funciones de búsqueda
+                function buscarEnLeyes(searchTerm) {
+                  console.log("Realizando búsqueda en la categoría 'leyes' con el término: " + searchTerm);
+                  // Lógica de búsqueda específica para la categoría 'leyes'
+                }
+            
+                function buscarEnDecretos(searchTerm) {
+                  console.log("Realizando búsqueda en la categoría 'decretos' con el término: " + searchTerm);
+                  // Lógica de búsqueda específica para la categoría 'decretos'
+                }
+            
+                function buscarEnResoluciones(searchTerm) {
+                  console.log("Realizando búsqueda en la categoría 'resoluciones' con el término: " + searchTerm);
+                  // Lógica de búsqueda específica para la categoría 'resoluciones'
+                }
+            
+                function buscarEnRecursos(searchTerm) {
+                  console.log("Realizando búsqueda en la categoría 'recursos' con el término: " + searchTerm);
+                  // Lógica de búsqueda específica para la categoría 'recursos'
+                }
+            
+                function buscarEnMisFavoritos(searchTerm) {
+                  console.log("Realizando búsqueda en la categoría 'mis favoritos' con el término: " + searchTerm);
+                  // Lógica de búsqueda específica para la categoría 'mis favoritos'
+                }
+            
+                function buscarEnMasVisitados(searchTerm) {
+                  console.log("Realizando búsqueda en la categoría 'más visitados' con el término: " + searchTerm);
+                  // Lógica de búsqueda específica para la categoría 'más visitados'
+                }
+            
+                function buscar(searchTerm) {
+                  console.log("Realizando búsqueda general con el término: " + searchTerm);
+                  // Lógica de búsqueda general
+                }
+              });
+            </script>            
+    </body>
+    
+</html>
