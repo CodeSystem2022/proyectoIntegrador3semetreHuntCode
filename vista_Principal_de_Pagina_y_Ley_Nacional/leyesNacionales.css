@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: url('Captura\ de\ pantalla\ 2023-06-28\ 203323.png');
+        background-repeat: no-repeat;
+        background-size: cover; /* Ajustar la imagen de fondo para cubrir todo el cuerpo */
+        background-position: center; /* Centrar la imagen de fondo */
+      
+      
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(7, 7, 7, 0.8);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(207, 200, 90, 0.9); /* Cambiar el color de fondo a amarillo */
+  
+  }
+  
+.leyesNacionales {
+        text-align: center; /* Centrar horizontalmente */
+        height: 25vh;
+        display: center;
+        justify-content: center;
+        margin: 12%;
+        background-color: rgba(207, 205, 87, 0.9); /* Cambiar el color de fondo a amarillo */
+        color: rgb(20, 3, 48);
+  }
