@@ -4,12 +4,12 @@ from Capas_log.Logger import log
 
 # Aca empieza el CRUD
 
-def crear_registro(nombre, apellido, contraseña, email=None):
+def crear_registro(nombre, apellido, contrasenia, email=None):
     try:
         conexion = establecer_conexion()
         with conexion.cursor() as cursor:
-            sql = "INSERT INTO individuos (nombre, apellido, contraseña, email) VALUES (%s, %s, %s, %s)"
-            valores = (nombre, apellido, contraseña, email)
+            sql = "INSERT INTO individuos (nombre, apellido, contrasenia, email) VALUES (%s, %s, %s, %s)"
+            valores = (nombre, apellido, contrasenia, email)
             cursor.execute(sql, valores)
         conexion.commit()
         log.debug("Registro creado exitosamente.")
@@ -56,13 +56,13 @@ def obtener_registro_por_id(idIndividuo):
         conexion.close()
 
 
-def actualizar_registro(idIndividuo, nombre, apellido, contraseña, email):
+def actualizar_registro(idIndividuo, nombre, apellido, contrasenia, email):
     try:
         conexion = establecer_conexion()
         with conexion:
             with conexion.cursor() as cursor:
-                sql = "UPDATE individuos SET nombre = %s, apellido = %s, contraseña = %s, email = %s WHERE idIndividuo = %s"
-                valores = (nombre, apellido, contraseña, email, idIndividuo)
+                sql = "UPDATE individuos SET nombre = %s, apellido = %s, contrasenia = %s, email = %s WHERE idIndividuo = %s"
+                valores = (nombre, apellido, contrasenia, email, idIndividuo)
                 cursor.execute(sql, valores)
     except Exception as e:
         log.error(f'Ocurrio un error, se hizo un rollback: {e}')
