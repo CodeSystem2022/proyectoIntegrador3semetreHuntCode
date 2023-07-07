@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: rgb(247, 253, 255);
+  }
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    background: rgb(184, 197, 206);
+    color: rgb(15, 36, 44);
+    font-weight: bold;
+  }
+  a:hover {
+    background: rgb(157, 172, 184);
+  }
+  h3 {
+    background: rgb(45, 123, 196);
+    padding: 20px;
+  }
+  
+  main{
+      margin-top: 60px;
+  }
+  header {
+    width: 100%;
+    background: rgb(184, 197, 206);
+    position: fixed;
+    top: 0;
+  }
+  .item{
+      scroll-margin-top: 8ex;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+  
