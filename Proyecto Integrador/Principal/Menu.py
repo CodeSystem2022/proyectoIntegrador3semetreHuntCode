@@ -18,10 +18,10 @@ while True:
         #idIndividuo = int(input("Ingrese el id de la persona: "))
         nombre = input("Ingrese el nombre de la persona: ")
         apellido = input("Ingrese el apellido de la persona: ")
-        contraseña = int(input("Ingrese el contraseña de la persona: "))
+        contrasenia = input("Ingrese el contraseña de la persona: ")
         email = input("Ingrese el email de la persona: ")
         
-        crear_registro(nombre, apellido, contraseña, email)
+        crear_registro(nombre, apellido, contrasenia, email)
     elif opcion == "2":
         print(obtener_registros())
 
@@ -33,9 +33,9 @@ while True:
         idIndividuo = int(input("Ingrese el id de la persona a modificar: "))
         nombre = input("Ingrese el nombre de la persona: ")
         apellido = input("Ingrese el apellido de la persona: ")
-        contraseña = int(input("Ingrese la contraseña de la persona: "))
+        contrasenia = int(input("Ingrese la contraseña de la persona: "))
         email = input("Ingrese el email de la persona: ")
-        actualizar_registro(idIndividuo, nombre, apellido, contraseña, email)
+        actualizar_registro(idIndividuo, nombre, apellido, contrasenia, email)
 
     elif opcion == "5":
         eliminar_registro(int(input("Ingrese el id de la persona que desea dar de baja: ")))
