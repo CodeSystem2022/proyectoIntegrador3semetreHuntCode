@@ -1,0 +1,1 @@
+Comenzamos con este proyecto a través de Python, conectando a base de datos, cargando los datos obtenidos a través de google y subiendo a GITHUB, la parte legal de la Higiene y Seguridad.
