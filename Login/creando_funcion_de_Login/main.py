@@ -13,13 +13,12 @@ def registrar():
     email = input("Ingresa tu correo electrónico: ")
     password = input("Ingresa tu contraseña: ")
 
-    # Aquí puedes agregar la lógica para almacenar los datos del usuario en una base de datos o archivo
 
     print("¡Registro exitoso!")
 
 
 def ingresar():
-    # Lógica para ingresar al sistema
+    # ingresar al sistema
 
 
     nombre = input("Ingrese su nombre: ")
