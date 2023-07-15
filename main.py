@@ -1,21 +1,60 @@
 import webbrowser
 import wget
 
+def mostrar_menu():
+    print("Bienvenido al sistema:")
+    print("1. Registrarse")
+    print("2. Ingresar")
+    print("3. Salir")
 
-def login():
-    username = input("Ingrese su nombre de usuario: ")
-    password = input("Ingrese su contraseña: ")
+def registrar():
+    # Registro de usuario
 
-    # Verificar las credenciales ingresadas
-    if username == "admin" and password == "123789":
-        print("Inicio de sesión exitoso.")
+    print("Registro de usuario")
+    nombre = input("Ingresa tu nombre: ")
+    apellido = input("Ingresa tu apellido: ")
+    email = input("Ingresa tu correo electrónico: ")
+    password = input("Ingresa tu contraseña: ")
 
+    # Aquí puedes agregar la lógica para almacenar los datos del usuario en una base de datos o archivo
+
+    print("¡Registro exitoso!")
+
+
+def ingresar():
+    # Lógica para ingresar al sistema
+
+
+    nombre = input("Ingrese su nombre: ")
+    contraseña = input("Ingrese su contraseña: ")
+    if nombre in usuarios and usuarios[nombre] == contraseña:
+        print("¡Inicio de sesión exitoso!")
     else:
-        print("Credenciales inválidas. Inténtelo nuevamente.")
+        print("Nombre de usuario o contraseña incorrectos.")
 
 
-# Llamada a la función de inicio de sesión
-login()
+usuarios = {}
+
+opciones = {
+    "1": registrar,
+    "2": ingresar,
+}
+
+while True:
+    mostrar_menu()
+    opcion = input("Selecciona una opción: ")
+
+    if opcion in opciones:
+        opciones[opcion]()
+    elif opcion == "3":
+        print("Gracias por usar el sistema. ¡Hasta luego!")
+        break
+    else:
+        print("Opción inválida. Por favor, selecciona una opción válida.")
+
+
+
+
 def mostrar_menu_leyes():
     print("*** LEYES ****")
     print("1. Ley 19587/1972")
