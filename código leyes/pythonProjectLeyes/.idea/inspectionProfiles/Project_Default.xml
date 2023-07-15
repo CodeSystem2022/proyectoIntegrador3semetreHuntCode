@@ -1,0 +1,19 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="Excepciones.Leccion1.manejo_exepciones.*" />
+          <option value="Excepciones.Leccion1.manejo_excepciones.*" />
+          <option value="NumerosIgualesException" />
+          <option value="Excepciones.NumerosIgualesException.*" />
+          <option value="i_registros.setencia" />
+          <option value="actualizarVarios_reg.setencia" />
+          <option value="capa_dato_persona.logger_base.*" />
+          <option value="capa_dato_persona.persona_dao.PersonaDAO" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
