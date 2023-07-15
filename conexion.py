@@ -1,8 +1,9 @@
-import mysql.connector
+import mysql.connector as cx
 
-mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password=" ",
-    database="HIGIENE_Y_SEGURIDAD_LEGAL",
-)
+config = {
+  'user': 'root',
+  'password': 'root',
+  'host': 'localhost',
+  'database': 'Legal_Higiene_Y_Seguridad',
+  'raise_on_warnings': True
+}
